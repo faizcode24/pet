@@ -1,0 +1,86 @@
+/* Footer Styling */
+.footer {
+    background-color: #4CAF50; /* Green background for the footer */
+    color: white; /* White text color */
+    padding: 40px 20px; /* Padding around the footer */
+    text-align: center; /* Center the text */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1); /* Subtle top shadow for depth */
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top for 3D effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.footer:hover {
+    transform: translateY(-5px); /* Slight upward shift on hover for 3D lift effect */
+    box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow for 3D look */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px;
+    padding: 10px; /* Add padding for better spacing */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.footer-section:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.3rem; /* Increased size for section titles */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 3D text shadow for headings */
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s, transform 0.3s; /* Add smooth hover and transform effect */
+}
+
+.footer-link:hover {
+    color: #ffeb3b; /* Yellow color on hover */
+    transform: translateX(5px); /* Slight shift on hover for dynamic effect */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+    transform: rotate(360deg); /* Rotate icons slightly on hover for fun effect */
+    transform: scale(1.9) rotateY(360deg);
+    
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+    margin-top: 20px; /* Added margin for better spacing */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}

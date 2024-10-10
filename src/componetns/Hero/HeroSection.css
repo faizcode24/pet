@@ -1,0 +1,110 @@
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #96a82e; /* Background color */
+    perspective: 1000px; /* Perspective for the 3D effect */
+}
+
+.hero-image {
+    position: absolute;
+    top: -100%; /* Start the image off-screen */
+    animation: slideIn 1s forwards ease-in-out; /* Smooth sliding in */
+    width: 100vw;
+    height: 100vh; /* Adjust the image height as per design */
+    overflow: hidden;
+    transform-style: preserve-3d; /* Allow for 3D transformations */
+}
+
+.hero-image img {
+    width: 100%; /* Make sure image width is responsive */
+    height: 100%; /* Keep the height responsive */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+    opacity: 0; /* Initially invisible */
+    transform: scale(1.5) rotateX(15deg); /* 3D rotation and zoom out */
+    animation: imageFadeIn 2s 1s forwards ease-in-out; /* Delayed fade-in and scale animation */
+}
+
+.hero-content {
+    position: relative; /* Position content above the image */
+    z-index: 1; /* Ensure content stays above the image */
+    color: white; /* Text color */
+    text-align: center;
+    margin-top: 30px; /* Space between image and content */
+    transform: translateZ(50px) rotateY(0deg); /* Add 3D effect to content */
+    transition: transform 0.6s ease-in-out; /* Smooth transition */
+}
+
+.hero-content:hover {
+    transform: translateZ(100px) rotateY(15deg); /* Rotate content on hover */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Heading size for larger screens */
+    margin: 0; /* Remove default margin */
+    transform: translateZ(50px); /* Give a 3D depth effect */
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Paragraph size */
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: white; /* Button background color */
+    color: #4CAF50; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem; /* Button text size */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.hero-content button:hover {
+    background-color: #ddd; /* Button hover effect */
+    transform: scale(1.9) rotateY(360deg); /* Add slight 3D rotation on hover */
+}
+
+/* Keyframes for sliding in the image */
+@keyframes slideIn {
+    0% {
+        top: -100%; /* Start off-screen */
+    }
+    100% {
+        top: 0; /* End at the top of the container */
+    }
+}
+
+/* Keyframes for fading in and zooming the image */
+@keyframes imageFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.2) rotateX(15deg); /* Start with zoomed-in and rotated image */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateX(0deg); /* Image settles at normal size */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    .hero-content button {
+        font-size: 0.9rem; /* Adjust button size for smaller screens */
+    }
+}

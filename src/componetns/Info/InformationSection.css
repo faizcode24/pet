@@ -1,0 +1,80 @@
+/* Information Section Styling */
+.information-section {
+    padding: 50px;
+    background: linear-gradient(145deg, #f9f9f9, #eaeaea); /* Soft gradient for subtle 3D feel */
+    color: #333; /* Text color */
+    max-width: 90%; /* Max width for readability */
+    margin: 30px auto; /* Center the section with margin */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(181, 8, 8, 0.5), 0 4px 10px rgba(0, 0, 0, 0.1); /* Pronounced multi-layered shadow */
+    transition: all 0.4s ease; /* Smooth transition for hover effects */
+}
+
+.information-section:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-190px); /* Slight upward movement for 3D effect */
+}
+
+.information-section h2 {
+    font-size: 2.5rem; /* Larger title size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #4CAF50; /* Green color for headings */
+    border-bottom: 2px solid #4CAF50; /* Underline effect */
+    padding-bottom: 10px; /* Padding below the heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for text */
+}
+
+.information-section h3 {
+    font-size: 1.75rem; /* Increased subtitle size */
+    margin-top: 25px; /* Space above subtitles */
+    color: #333; /* Dark color for subtitles */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Text shadow for 3D effect */
+}
+
+.information-section p {
+    font-size: 1.1rem; /* Slightly larger paragraph size */
+    line-height: 1.8; /* Increased line height for readability */
+    margin: 15px 0; /* Space above and below paragraphs */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Light shadow for paragraph text */
+}
+
+.information-section ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indentation */
+}
+
+.information-section ul li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.1rem; /* Size for list items */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Shadow for list items */
+}
+
+.information-section a {
+    color: #4CAF50; /* Link color */
+    text-decoration: underline; /* Underlined link */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and 3D hover transition */
+}
+
+.information-section a:hover {
+    color: #2e7d32; /* Darker green on hover */
+    transform: translateX(5px); /* Slight movement for 3D effect */
+}
+
+.information-section button {
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1rem; /* Button text size */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth background, shadow, and 3D transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow for 3D effect */
+}
+
+.information-section button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Button hover lift for 3D effect */
+}
